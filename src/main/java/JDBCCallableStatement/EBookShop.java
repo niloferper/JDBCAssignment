@@ -1,4 +1,4 @@
-package com.nttdata.nilofer.JDBCAssignment;
+package JDBCCallableStatement;
 
 import java.util.Scanner;
 
@@ -54,7 +54,7 @@ public class EBookShop {
 				System.out.println("Update Book");
 				UpdateBook upObj = new UpdateBook();
 				int num = upObj.bookUpdate();
-				if (num>0)System.out.println("Book data updated");
+				if (num>0)System.out.println("Book details Updated");;
 				System.out.println("Enter y to continue");
 				input.next();
 				break;
@@ -63,7 +63,7 @@ public class EBookShop {
 
 				System.out.println("Delete Book ");
 				DeleteBook delObj = new DeleteBook();
-				 delObj.bookDelete();
+				delObj.bookDelete();
 				System.out.println("Enter y to continue");
 				input.next();
 				break;
@@ -76,6 +76,8 @@ public class EBookShop {
 				if(count > 0)
 				{
 					System.out.println(count + " Book found ");
+				}else {
+					System.out.println("no books to list.");
 				}
 				System.out.println("Enter y to continue");
 				input.next();
