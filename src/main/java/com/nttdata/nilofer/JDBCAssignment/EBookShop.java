@@ -25,7 +25,7 @@ public class EBookShop {
 			//System.out.println(choice);
 			if ((choice < 0) || (choice > 5)) {
 				System.out.println("Error , Please enter correct choice");
-				 choice = input.nextInt();
+			//	 choice = input.nextInt();
 				continue;
 			}
 			
